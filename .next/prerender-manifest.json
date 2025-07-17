@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/user-login": {
+    "/user-signup": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,32 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/user-login",
-      "dataRoute": "/user-login.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/homepage": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/homepage",
-      "dataRoute": "/homepage.rsc",
+      "srcRoute": "/user-signup",
+      "dataRoute": "/user-signup.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -73,7 +49,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/profile": {
+    "/homepage": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -86,8 +62,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/profile",
-      "dataRoute": "/profile.rsc",
+      "srcRoute": "/homepage",
+      "dataRoute": "/homepage.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -97,7 +73,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/user-signup": {
+    "/test-series": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -110,32 +86,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/user-signup",
-      "dataRoute": "/user-signup.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
-    "/admin-login": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/admin-login",
-      "dataRoute": "/admin-login.rsc",
+      "srcRoute": "/test-series",
+      "dataRoute": "/test-series.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -193,6 +145,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/admin/live-test-scheduler": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/admin/live-test-scheduler",
+      "dataRoute": "/admin/live-test-scheduler.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/admin/dashboard": {
       "experimentalBypassFor": [
         {
@@ -241,30 +217,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/admin/live-test-scheduler": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/live-test-scheduler",
-      "dataRoute": "/admin/live-test-scheduler.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/admin/test-series": {
       "experimentalBypassFor": [
         {
@@ -289,7 +241,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/admin/tabs": {
+    "/admin/users-management": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -302,8 +254,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/tabs",
-      "dataRoute": "/admin/tabs.rsc",
+      "srcRoute": "/admin/users-management",
+      "dataRoute": "/admin/users-management.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -313,7 +265,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/admin/transactions": {
+    "/admin-login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -326,8 +278,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/transactions",
-      "dataRoute": "/admin/transactions.rsc",
+      "srcRoute": "/admin-login",
+      "dataRoute": "/admin-login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -337,7 +289,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/admin/questions-bank": {
+    "/user-login": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -350,8 +302,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/questions-bank",
-      "dataRoute": "/admin/questions-bank.rsc",
+      "srcRoute": "/user-login",
+      "dataRoute": "/user-login.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -361,7 +313,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/test-series": {
+    "/profile": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -374,8 +326,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/test-series",
-      "dataRoute": "/test-series.rsc",
+      "srcRoute": "/profile",
+      "dataRoute": "/profile.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -433,7 +385,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/admin/users-management": {
+    "/admin/transactions": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -446,8 +398,56 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/admin/users-management",
-      "dataRoute": "/admin/users-management.rsc",
+      "srcRoute": "/admin/transactions",
+      "dataRoute": "/admin/transactions.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/admin/tabs": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/admin/tabs",
+      "dataRoute": "/admin/tabs.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
+    "/admin/questions-bank": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/admin/questions-bank",
+      "dataRoute": "/admin/questions-bank.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
